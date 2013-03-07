@@ -14,10 +14,11 @@ class Grid {
 public:
 	Grid( void );
 	void sayHi( void );
+	void display( void );
 private:
 	string name;
 
-	
+	char spot[GRID_SIZE][GRID_SIZE];
 };
 
 #endif

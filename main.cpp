@@ -33,5 +33,7 @@ int main() {
 
 	test.sayHi();
 
+	test.display();
+
 	return 0;
 }

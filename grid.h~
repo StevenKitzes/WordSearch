@@ -6,6 +6,8 @@
 #include <string>
 #include <iostream>
 
+#include "main.h"
+
 using namespace std;
 
 class Grid {
@@ -15,7 +17,7 @@ public:
 private:
 	string name;
 
-	
+	char spot[GRID_SIZE][GRID_SIZE];
 };
 
 #endif
