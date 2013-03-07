@@ -1,0 +1,9 @@
+#ifndef main_h
+#define main_h
+
+#define end2l endl<<endl
+#define GRID_SIZE 10
+
+using namespace std;
+
+#endif
