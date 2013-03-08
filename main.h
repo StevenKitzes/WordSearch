@@ -9,6 +9,10 @@
 	#define GRID_SIZE 10
 #endif
 
+#include "grid.h"
+
 using namespace std;
+
+void doSearch( const Grid & grid );
 
 #endif

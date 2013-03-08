@@ -14,24 +14,31 @@ using namespace std;
 
 int main() {
 
-	srand(time(NULL));
+	srand(time(NULL));	//	seed rand by system time
 	
-	cout << endl;
-
-	string line;
-	ifstream dict ("dictionary.txt");
-	/*
-	while( dict.good() ) {
-		getline( dict, line );
-
-		if( line != "" )
-			cout << line << " retrieved!" << end2l;
-	}
-	*/
+	cout << endl;		//	for output prettiness
 
 	Grid test;
 
-	test.sayHi();
+	doSearch(test);
 
 	return 0;
+}
+
+//	member function definitions
+
+void doSearch( const Grid & grid ) {
+
+	string item;
+	ifstream dict ("dictionary.txt");
+	
+	while( dict.good() ) {
+		getline( dict, item );
+
+		if( item != "" )
+			cout << line << " retrieved!" << end2l;
+	}
+
+	return;
+
 }

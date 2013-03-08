@@ -15,9 +15,9 @@ public:
 	Grid( void );
 	void sayHi( void );
 	void display( void );
+	
+	char getChar( unsigned y, unsigned x );
 private:
-	string name;
-
 	char spot[GRID_SIZE][GRID_SIZE];
 };
 
