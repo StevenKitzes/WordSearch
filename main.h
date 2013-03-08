@@ -13,6 +13,8 @@
 
 using namespace std;
 
-void doSearch( const Grid & grid );
+void doSearch( Grid & grid );
+bool checkWord( const string & item, Grid & grid );
+bool checkNextLetter( const string & item, Grid & grid, unsigned slot );
 
 #endif

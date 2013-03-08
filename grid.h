@@ -13,12 +13,16 @@ using namespace std;
 class Grid {
 public:
 	Grid( void );
-	void sayHi( void );
-	void display( void );
+	void sayHi( void ) const;
+	void display( void ) const;
+	void displayChecked( void ) const;
 	
-	char getChar( unsigned y, unsigned x );
+	char getChar( unsigned y, unsigned x ) const;
+	bool checkSpot( unsigned y, unsigned x ) const;
+	void resetChecked( void );
 private:
 	char spot[GRID_SIZE][GRID_SIZE];
+	bool checked[GRID_SIZE][GRID_SIZE];
 };
 
 #endif
