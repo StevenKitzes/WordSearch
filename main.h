@@ -14,7 +14,7 @@
 using namespace std;
 
 void doSearch( Grid & grid );
-bool checkWord( const string & item, Grid & grid );
-bool checkNextLetter( const string & item, Grid & grid, unsigned slot );
+bool checkWord( const string & item, Grid & grid, string & output );
+bool checkNextLetter( const string & item, Grid & grid, string & output, const unsigned & y, const unsigned & x, unsigned slot );
 
 #endif

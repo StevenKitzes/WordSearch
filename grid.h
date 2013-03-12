@@ -10,6 +10,11 @@
 
 using namespace std;
 
+struct Node {
+	char c;
+	bool checked;
+};	//	node
+
 class Grid {
 public:
 	Grid( void );
@@ -18,11 +23,13 @@ public:
 	void displayChecked( void ) const;
 	
 	char getChar( unsigned y, unsigned x ) const;
+
 	bool checkSpot( unsigned y, unsigned x ) const;
+
+	void setChecked( unsigned y, unsigned x);
 	void resetChecked( void );
 private:
-	char spot[GRID_SIZE][GRID_SIZE];
-	bool checked[GRID_SIZE][GRID_SIZE];
+	Node spot[GRID_SIZE][GRID_SIZE];
 };
 
 #endif
