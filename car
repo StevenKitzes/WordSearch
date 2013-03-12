@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Compiling all source ... "
+g++ main.cpp grid.cpp -o main
+echo "Done compiling!  Now attempting to run ..."
+./main

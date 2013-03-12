@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Loading all files into gedit ..."
+gedit main.h main.cpp grid.h grid.cpp dictionary.txt
