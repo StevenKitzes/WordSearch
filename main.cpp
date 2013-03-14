@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
 
-	srand(time(NULL));	//	seed rand by system time
+	srand((unsigned)time(NULL));	//	seed rand by system time
 	
 	cout << endl;		//	for output prettiness
 
@@ -65,7 +65,8 @@ bool checkWord( const string & item, Grid & grid, string & output ) {
 		for( unsigned x = 0; x < GRID_SIZE; x++ ) {
 			if( grid.getChar(y,x) == (char)item[0]) {
 				grid.setChecked(y,x);
-				if(found = checkNextLetter( item, grid, output, y, x, 1 )) return found;
+				found = checkNextLetter( item, grid, output, y, x, 1 );
+				if (found) return found;
 			}
 		}
 	}
